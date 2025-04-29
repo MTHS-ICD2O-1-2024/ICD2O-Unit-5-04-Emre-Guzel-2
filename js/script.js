@@ -6,21 +6,19 @@
 // This file contains the JS functions for index.html
 
 "use strict"
-
-function pgNumberCalculator() {
+// Setting the functoin 
+function musuemDiscountAgeCalculator() {
   // Setting the variables
-  const age = parseInt(document.getElementById("age").value)
+  const age = parseInt(document.getElementById("age").value);
+  const day = document.getElementById("day").value;
+  let message = "";
 
-  let message = ""
-
-  if (age >= 17) {
-    message = " You can watch R-rated movie alone."
-  } else if (age >= 13) {
-    message = " You can watch PG-13 movie alone."
-  }else if (age >= 5) {
-    message = " You can watch G or PG movie alone."
-  }else {
-    message = " Uh, you're too young for most things."
+  // Setting the if statement
+  if ((day === "Tuesday" || day === "Thursday") || (age > 12 && age < 21)) {
+    message = "You're eligible for student pricing";
+  } else {
+    message = "You must pay the regular pricing";
   }
-  document.getElementById("result").textContent = message;
+
+  document.getElementById("result").innerHTML = message;
 }
