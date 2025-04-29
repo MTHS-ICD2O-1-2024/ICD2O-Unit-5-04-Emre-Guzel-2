@@ -38,17 +38,29 @@
           <label class="mdl-textfield__label" for="age"></label>
           <span class="mdl-textfield__error">Input is not a number!</span>
         </div>
-        <br><br>
-        <main id="click-me " class="mdl-layout__content">
-          <button id="click" type="button" onclick="pgNumberCalculator()"
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            Generate
-        </main>
-      </form>
-      <div id="result"></div>
+        <br>
+        <div class="dropdown-container">
+          <label class="select-day" for="options">Choose day of the week</label>
+          <br>
+          <select id="options" name="options">
+            <option value="option1">Monday</option>
+            <option value="option2">Tuesday</option>
+            <option value="option3">Wednesday</option>
+            <option value="option4">Thursday</option>
+            <option value="option5">Friday</option>
+          </select>
     </div>
     <br>
-    <img class="Calculate" src="images/movie_ratings.jpg" alt="Movie ratigns">
+    <main id="click-me " class="mdl-layout__content">
+      <button id="click" type="button" onclick="pgNumberCalculator()"
+        class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+        Generate
+    </main>
+    </form>
+    <div id="result"></div>
+  </div>
+  <br>
+  <img class="Calculate" src="images/movie_ratings.jpg" alt="Movie ratigns">
   </div>
 </body>
 
